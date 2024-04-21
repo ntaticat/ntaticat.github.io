@@ -53,7 +53,7 @@ const listUsers = async () => {
 
             let isActive = '';
 
-            if(user.activo === 1) {
+            if(user.activo === true) {
                 isActive = '<td><i class="fa-solid fa-check" style="color: green;"></i></td>';
             }
             else {
