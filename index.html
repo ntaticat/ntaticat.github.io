@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         .container {
             max-width: 1000px;
             margin: 20px auto;
@@ -20,6 +22,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+
         h1 {
             color: #333;
             padding-bottom: 10px;
@@ -34,6 +37,7 @@
             color: #666;
             margin-bottom: 20px;
         }
+
         .card {
             margin-bottom: 20px;
             padding: 10px;
@@ -44,35 +48,42 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
+
         .column {
             flex: 1 1 45%;
         }
 
         @media only screen and (max-width: 768px) {
-    .column {
-        flex: 1 1 100%;
-    }
-}
+            .column {
+                flex: 1 1 100%;
+            }
+        }
+
         .card h3 {
             color: #007bff;
             margin-bottom: 30px;
         }
+
         .card p {
             color: #666;
             margin-bottom: 5px;
         }
+
         .card a {
             color: #007bff;
             text-decoration: none;
             transition: color 0.3s ease;
         }
+
         .card a:hover {
             color: #0056b3;
         }
+
         .not-available {
             color: #ccc;
             font-style: italic;
         }
+
         .program-img {
             max-width: 100px;
             height: auto;
@@ -81,6 +92,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
         .teacher-img {
             display: block;
             margin: 0 auto 20px auto;
@@ -99,76 +111,84 @@
             color: #666;
             font-size: 14px;
         }
-
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <img src="./code_penguin.jpg" alt="A penguin coding" class="teacher-img">
-    <div class="header">
-        <h1>Recursos de Pensamiento Computacional</h1>
-    </div>
-    <div class="card">
-        <div class="column">
-            <h3>Sesiones</h3>
-            <div class="session">
-                <p><strong>Sesión 1</strong></p>
-                <p>Fecha: Sábado 20 de Abril de 2024</p>
-                <p><a target="_blank" href="https://view.genial.ly/65dfd6229600ca0014ccf565/interactive-content-edc-pc-sesion-1">Enlace a la presentación de la sesión 1</a></p>
+    <div class="container">
+        <img src="./code_penguin.jpg" alt="A penguin coding" class="teacher-img">
+        <div class="header">
+            <h1>Recursos de Pensamiento Computacional</h1>
+        </div>
+        <div class="card">
+            <div class="column">
+                <h3>Sesiones</h3>
+                <div class="session">
+                    <p><strong>Sesión 1</strong></p>
+                    <p>Fecha: Sábado 20 de Abril de 2024</p>
+                    <p><a target="_blank"
+                            href="https://view.genial.ly/65dfd6229600ca0014ccf565/interactive-content-edc-pc-sesion-1">Enlace
+                            a la presentación de la sesión 1</a></p>
+                </div>
+                <div class="session">
+                    <p><strong>Sesión 2</strong></p>
+                    <p>Fecha: Sábado 27 de Abril de 2024</p>
+                    <p><a target="_blank"
+                            href="https://view.genial.ly/662d03cdbc43640015feb743/learning-experience-didactic-unit-pfc-edc-pc-sesion-2">Enlace
+                            a la presentación de la sesión 2</a></p>
+                </div>
+                <div class="session">
+                    <p><strong>Sesión 3</strong></p>
+                    <p>Fecha: Sábado 4 de Mayo de 2024</p>
+                    <p><span class="not-available">Enlace aún no disponible</span></p>
+                </div>
+                <div class="session">
+                    <p><strong>Sesión 4</strong></p>
+                    <p>Fecha: Sábado 11 de Mayo de 2024</p>
+                    <p><span class="not-available">Enlace aún no disponible</span></p>
+                </div>
+                <div class="session">
+                    <p><strong>Sesión 5</strong></p>
+                    <p>Fecha: Sábado 18 de Mayo de 2024</p>
+                    <p><span class="not-available">Enlace aún no disponible</span></p>
+                </div>
+                <div class="session">
+                    <p><strong>Sesión 6</strong></p>
+                    <p>Fecha: Sábado 25 de Mayo de 2024</p>
+                    <p><span class="not-available">Enlace aún no disponible</span></p>
+                </div>
+                <div class="session">
+                    <p><strong>Sesión 7</strong></p>
+                    <p>Fecha: Sábado 1 de Junio de 2024</p>
+                    <p><span class="not-available">Enlace aún no disponible</span></p>
+                </div>
             </div>
-            <div class="session">
-                <p><strong>Sesión 2</strong></p>
-                <p>Fecha: Sábado 27 de Abril de 2024</p>
-                <p><span class="not-available">Enlace aún no disponible</span></p>
-            </div>
-            <div class="session">
-                <p><strong>Sesión 3</strong></p>
-                <p>Fecha: Sábado 4 de Mayo de 2024</p>
-                <p><span class="not-available">Enlace aún no disponible</span></p>
-            </div>
-            <div class="session">
-                <p><strong>Sesión 4</strong></p>
-                <p>Fecha: Sábado 11 de Mayo de 2024</p>
-                <p><span class="not-available">Enlace aún no disponible</span></p>
-            </div>
-            <div class="session">
-                <p><strong>Sesión 5</strong></p>
-                <p>Fecha: Sábado 18 de Mayo de 2024</p>
-                <p><span class="not-available">Enlace aún no disponible</span></p>
-            </div>
-            <div class="session">
-                <p><strong>Sesión 6</strong></p>
-                <p>Fecha: Sábado 25 de Mayo de 2024</p>
-                <p><span class="not-available">Enlace aún no disponible</span></p>
-            </div>
-            <div class="session">
-                <p><strong>Sesión 7</strong></p>
-                <p>Fecha: Sábado 1 de Junio de 2024</p>
-                <p><span class="not-available">Enlace aún no disponible</span></p>
+            <div class="column">
+                <h3>Programas y Aplicaciones</h3>
+                <div class="programs">
+                    <img src="./scratch.png" alt="Programa 1" class="program-img">
+                    <p><strong>Scratch</strong></p>
+                    <p>MIT Scratch es un entorno de programación visual que ayuda a enseñar programación a niños y
+                        principiantes utilizando bloques de código que se arrastran y sueltan para crear proyectos
+                        interactivos como juegos y animaciones.</p>
+                    <p><a target="_blank" href="https://scratch.mit.edu/">Enlace al sitio</a></p>
+                </div>
+                <div class="programs">
+                    <img src="drawio.png" alt="Programa 2" class="program-img">
+                    <p><strong>draw.io</strong></p>
+                    <p>Es una herramienta en línea gratuita para crear diagramas, organigramas, mapas mentales y otros
+                        tipos de diagramas.</p>
+                    <p><a target="_blank" href="https://app.diagrams.net/">Enlace a la aplicación</a></p>
+                </div>
             </div>
         </div>
-        <div class="column">
-            <h3>Programas y Aplicaciones</h3>
-            <div class="programs">
-                <img src="./scratch.png" alt="Programa 1" class="program-img">
-                <p><strong>Scratch</strong></p>
-                <p>MIT Scratch es un entorno de programación visual que ayuda a enseñar programación a niños y principiantes utilizando bloques de código que se arrastran y sueltan para crear proyectos interactivos como juegos y animaciones.</p>
-                <p><a target="_blank" href="https://scratch.mit.edu/">Enlace al sitio</a></p>
-            </div>
-            <div class="programs">
-                <img src="drawio.png" alt="Programa 2" class="program-img">
-                <p><strong>draw.io</strong></p>
-                <p>Es una herramienta en línea gratuita para crear diagramas, organigramas, mapas mentales y otros tipos de diagramas.</p>
-                <p><a target="_blank" href="https://app.diagrams.net/">Enlace a la aplicación</a></p>
-            </div>
-        </div>
     </div>
-</div>
 
-<footer>
-    <p>Docente Rafael Estrada | PILARES Facundo Cabral</p>
-</footer>
+    <footer>
+        <p>Docente Rafael Estrada | PILARES Facundo Cabral</p>
+    </footer>
 
 </body>
+
 </html>
