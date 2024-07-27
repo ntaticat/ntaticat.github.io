@@ -1,0 +1,431 @@
+/* PROYECTO FINAL DE DESARROLLO DE PÁGINAS WEB DE ESCUELA DE CÓDIGO PILARES-ADIP: TIENDA ONLINE DE LIBROS
+    CÓDIGO CSS3 versión 1.0
+    ELABORÓ: Mtra. SUSANA TORRES */
+
+
+    
+/*FUENTES IMPORTADAS DE LETRAS DE LA PÁGINA*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+/*FUENTES IMPORTADAS DE LETRAS DE LA PÁGINA*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*ENCABEZADO DE LA PÁGINA*/
+/*SITIO Y ACCIONES DEL USUARIO*/
+h1{    font-size:80px;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    background: rgb(255, 255, 255);
+}
+
+.encabezado_arriba{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo-1{
+    color: rgb(110, 46, 8);
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    padding-right: 8rem;
+    padding-left: 30rem;
+}
+
+.buscar{
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.buscar .input{
+    width: 250px;
+    height: 30px;
+    font-size: 100%;
+    padding: 15px;
+    border:2px solid brown;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.buscar button img{
+    width: 30px;
+    height: 27px;
+    border: 2px brown;
+    cursor: pointer;
+    background: transparent;
+}
+
+.acciones_usuario{
+    display: flex;
+    align-items: center;
+}
+
+.acciones_usuario img{
+    width: 35px;
+    height: 35px; 
+    padding-right: 10px;
+}
+
+.acciones_usuario span{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    float: left;
+    background-color: brown;
+    color: white;
+    font-size: 17px;
+    border-radius: 50%;
+}
+/*FIN SITIO Y ACCIONES DEL USUARIO*/
+
+/*BARRA DE NAVEGACIÓN DE LA PÁGINA*/
+.encabezado-menu .navegador ul li{
+    display: inline;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.encabezado-menu .navegador ul{
+    text-align: center;
+    margin-top: 13px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    background-color: rgb(182, 154, 118);
+
+}
+
+.encabezado-menu .navegador ul li a{
+    font-size: 18px;
+    font-weight: 530;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255);
+    padding: 2px 7px 2px 7px;
+}
+
+.encabezado-menu .navegador ul li a:hover{
+    color:rgb(110, 46, 8);
+}
+/*FIN BARRA DE NAVEGACIÓN DE LA PÁGINA*/
+/*FIN ENCABEZADO DE LA PÁGINA*/
+
+
+/*PORTADA DE LA PÁGINA*/
+.tunel-portada{
+    width: 100%;
+    height: 25rem;
+}
+
+.portada-contenido{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+    z-index: 999;
+}
+.portada-titulo{
+    font-size: 3.2em;
+    margin: 15px;
+}
+.portada-txt{
+    font-size: 1.5em;
+    margin: 45px;
+}
+/*FIN PORTADA DE LA PÁGINA*/
+
+
+/*PRIMERA SECCIÓN DE LA PÁGINA*/
+/*RECOMENDACIONES DE LIBROS*/
+.productos {
+	padding: 5em 3em;
+}
+
+.titulo-b {
+	text-align:left;
+	margin-bottom: 0.7em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #911c0d;
+}
+
+.contenedor {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2em;
+}
+
+/*TARJETAS DE LIBROS CON FLEX*/
+.card {
+    position: relative;
+	display: flex;
+	flex-flow: column;
+    flex-wrap: wrap;
+	transition: 300ms ease-in-out;
+	/* 	 */
+}
+
+/*TARJETA CRECE DE TAMAÑO CON HOVER*/
+.productos .card:hover {
+	transform: scale(1.05);
+}
+
+.img-libro{
+    width: 180px;
+    height: 300px;
+}
+
+.card-txt {
+	/*FLEX PARA QUE EL TITULO SIEMPRE ESTE ARRIBA Y EL BOTON ABAJO*/
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1em;
+	padding: 1.5em 4em;
+	text-align: center;
+}
+
+.card-txt .btn {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#ffffff;
+    font-size: 0.8em;
+	background: #911c0d;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.6em 1.7em;
+	border-radius: 0.3em;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.09em;
+}
+
+.producto {
+	max-width: 280px;
+	vertical-align: top;
+	background: #fff;
+	padding: 10px 0 20px 0;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+.producto .contenedor-imagen{
+	min-height: 220px;
+	position: relative;
+}
+
+.producto .contenedor-imagen img{
+	width: 100%;
+}
+/*FIN PRIMERA SECCIÓN DE LA PÁGINA*/
+
+
+/*SEGUNDAD SECCIÓN DE LA PÁGINA*/
+/*CARRUSEL DE COMPRA DE LIBROS*/
+.titulo-c {
+	text-align:left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #911c0d;
+}
+
+.seccion__libros{
+    display: block;
+    padding: 5em 3em;
+}
+
+.barra_libros{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.mas__libros{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#911c0d;
+    margin-right: 10px;
+}
+
+.carrusel__libros{
+    display: flex;
+    overflow-x: scroll;
+    padding: 0.5em;
+}
+
+.box-compra{
+    display: flex;
+}
+
+div .box-compra{
+    padding: 1px;
+    flex-flow:row;
+	gap: 2em;
+}
+
+.box-compra .precio{
+    color:#976905;
+    font-size: 18px;
+}
+
+.card-txt .btn-compra {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#ffffff;
+    font-size: 0.7em;
+	background: #911c0d;
+    border: 1px #911c0d;
+}
+
+.btn-compra {
+	display: inline-block;
+	padding: 0.6em 1.7em;
+	border-radius: 0.3em;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.09em;
+}
+/*FIN SEGUNDAD SECCIÓN DE LA PÁGINA*/
+
+
+/*TERCERA SECCIÓN DE LA PÁGINA*/
+/*INFORMACIÓN DEL SITIO Y LIBRERIA*/
+.titulo-d {
+	text-align:left;
+	margin-bottom: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #911c0d;
+}
+
+.conocenos{
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 3em;
+    gap:50px;
+}
+
+#img-sucursal{
+    width: 650px;
+}
+
+.sucursal__descripcion p{
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 15px 0px 15px 0px;
+}
+
+.sucursal__descripcion .sucursal__invitación{
+    text-align: center;
+    color: #911c0d;
+}
+/*FIN TERCERA SECCIÓN DE LA PÁGINA*/
+
+
+/*PIE DE LA PÁGINA*/
+.main-footer{
+    background-color: rgb(182, 154, 118);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:small;
+    color: white;
+    padding: 15px 20px 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.footer__title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:medium;
+    font-weight: bold;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 15px;
+}
+
+.footer__txt {
+    color: #ffffff;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.email-to{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.redes-sociales{
+    margin-left: 95px;
+    margin-right: 95px;
+}
+
+.img_redes{
+    width: 25px;
+    height: 25px;
+    margin: 25px 5px;
+    color: #911c0d;
+}
+
+.footer__link{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 6px;
+}
+
+.footer__input{
+    background: #ffffff;
+    width: 100%;
+    font-size: small;
+    display: block;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ffffff;
+}
+
+.footer__subscripcion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+
+.suscripcion__enviar{
+    background-color: rgba(145, 28, 13, 50%);
+    color:#ffffff;
+    border: 1px rgba(145, 28, 13, 50%);
+    border-radius: 0px 6px 6px 0px;
+    margin-top: 10px;
+    padding: 6.1px ;
+    font-size: small;
+}
+
+.copy {
+    color: #ffffff;
+    grid-column-start: span 3;
+    text-align: center;
+}
+/*FIN PIE DE LA PÁGINA*/
+
+  
+
+
+
+
+

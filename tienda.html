@@ -1,0 +1,344 @@
+<!--PROYECTO FINAL DE DESARROLLO DE PÁGINAS WEB DE ESCUELA DE CÓDIGO PILARES-ADIP: TIENDA ONLINE DE LIBROS
+    CÓDIGO HTML5 versión 1.0
+    ELABORÓ: Mtra. SUSANA TORRES -->
+
+
+    
+<!DOCTYPE html>
+
+<html lang="es">
+
+<!--INFORMACIÓN GENERAL (METADATOS) DE LA PÁGINA--> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+    <title>PF_TiendaOnlineDeLibros</title>
+</head>
+<!--FIN INFORMACIÓN GENERAL (METADATOS) DE LA PÁGINA-->
+
+<body>
+    <!--ENCABEZADO DE LA PÁGINA-->
+    <header class="encabezado">
+        <!--SITIO Y ACCIONES DEL USUARIO-->
+        <div  class="encabezado_arriba">
+            <div>
+                <h1 class="logo-1">El Túnel</h1>
+            </div>
+            <div class="buscar">
+                <from class="buscar">
+                    <input class="input" type="search" placeholder="Buscar"/>
+                <button class="buscar_boton" type="submit"><img src="imagenes/magnifying-glass-solid.svg" alt="buscar" /></button>
+                </from>
+            </div>
+            <div class="acciones_usuario">
+                <a href="#" class="acciones_usuario_boton">
+                    <img src="imagenes/user-regular.svg" alt="usuario"/>
+                </a>
+                <a href="#" class="acciones_usuario_boton">
+                    <img src="imagenes/heart-regular.svg" alt="favoritos"/>
+                    <span class="cuenta">5</span>
+                </a>
+                <a href="#" class="acciones_usuario_boton">
+                    <img src="imagenes/bag-shopping-solid.svg" alt="bolsa"/>
+                    <span class="cuenta">3</span>
+                </a>
+            </div>
+        </div>
+        <!--BARRA DE NAVEGACIÓN DE LA PÁGINA-->
+        <div class = "encabezado-menu">
+            <nav class="navegador">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="#">Inicio</a></li>
+                        <li class="nav_item"><a href="#">Libros</a></li>
+                        <li class="nav_item"><a href="#">Los más leídos</a></li>
+                        <li class="nav_item"><a href="#">Accesorios</a></li>
+                        <li class="nav_item"><a href="#">Sucursal</a></li>
+                    </ul>
+            </nav>
+        </div>
+        <!--FIN BARRA DE NAVEGACIÓN DE LA PÁGINA-->
+    </header>
+    <!--FIN ENCABEZADO DE LA PÁGINA-->
+    
+    <!-- PORTADA DE LA PÁGINA -->
+    <div>
+        <div class="portada" id="portada">
+            <img src="imagenes/portada.jpg" class="tunel-portada">
+            <div class="portada-contenido">
+                <h2 class="portada-titulo">...Creando nuevos mundos, historias y recuerdos</h2>
+                <p class="portada-txt"><i>"Vivir consiste en construir futuros recuerdos"</i></p>
+            </div>
+        </div>
+    </div>
+    <!--FIN PORTADA DE LA PÁGINA -->
+
+    <!--CONTENIDO PRINCIPAL DE LA PÁGINA-->
+    <main>
+        <!--PRIMERA SECCIÓN DE LA PÁGINA-->
+        <!--RECOMENDACIONES DE LIBROS-->
+        <section class="productos">
+            <div class="titulo-b">
+                <h2 class="titulo-b">Recomendaciones</h2>
+            </div>
+			<div class="contenedor">
+				<article class="card">
+					<div class="card-img" id="producto-01"></div>
+					<div class="card-txt">
+                        <img src="https://imagessl2.casadellibro.com/a/l/t0/52/9788478884452.jpg" class="img-libro"/>
+						<h3>Harry Potter y la piedra filosofal</h3>
+                        <p>J. K. Rowling</p>
+						<a href="#" class="btn">Ver más</a>
+					</div>
+				</article>
+				<article class="card">
+					<div class="card-img" id="producto-02"></div>
+					<div class="card-txt">
+						<img src="https://imagessl9.casadellibro.com/a/l/t0/39/9788420471839.jpg" class="img-libro"/>
+						<h3>Cien años de soledad</h3>
+                        <p>Gabriel García Márquez</p>
+						<a href="#" class="btn">Ver más</a>
+					</div>
+				</article>
+				<article class="card">
+					<div class="card-img" id="producto-03"></div>
+					<div class="card-txt">
+						<img src="https://imagessl5.casadellibro.com/a/l/s7/75/9788411070775.webp" class="img-libro"/>
+						<h3>La insoportable levedad del ser</h3>
+                        <p>Milan Kundera</p>
+						<a href="#" class="btn">Ver más</a>
+					</div>
+				</article>
+				<article class="card">
+					<div class="card-img" id="producto-04"></div>
+					<div class="card-txt">
+						<img src="https://imagessl8.casadellibro.com/a/l/t0/88/9788466329088.jpg" class="img-libro"/>
+						<h3>Como agua para chocolate</h3>
+                        <p>Laura Esquivel</p>
+						<a href="#" class="btn">Ver más</a>
+					</div>
+				</article>
+			</div>
+		</section>
+        <!--FINN PRIMERA SECCIÓN DE LA PÁGINA-->
+
+        <!--SEGUNDA SECCIÓN DE LA PÁGINA-->
+        <!--CARRUSEL DE COMPRA DE LIBROS-->
+        <section class="seccion__libros">
+            <div class="barra_libros">
+                <div class="libros-mas">
+                    <h2 class="titulo-c">Libros</h2>
+                </div>
+                <div class="libros-mas">
+                    <a href="#" class="mas__libros">Ver más</a>
+                </div>
+            </div>
+            <div class="carrusel__libros">
+                <div class="elemento">
+                    <article class="card">
+                        <div class="card-img" id="producto-01"></div>
+                        <div class="card-txt">
+                            <a href="#" target="_blank"><img src="https://www.elsotano.com/imagenes_grandes/9786073/978607390465.JPG" class="img-libro"/></a>
+                            <h3>Fuerte es el silencio</h3>
+                            <p>Elena Poniatowska</p>
+                            <div class="box-compra">
+                                <div> 
+                                    <span class="precio">$450.00</span> 
+                                </div>
+                            <div>
+                                    <a href="#" class="btn-compra">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="elemento">
+                    <article class="card">
+                        <div class="card-img" id="producto-02"></div>
+                        <div class="card-txt">
+                            <a href="#" target="_blank"><img src="https://www.elsotano.com/imagenes_grandes/9786071/978607112655.JPG" class="img-libro"/></a>
+                            <h3>Rayuela</h3>
+                            <p>Julio Cortázar</p>
+                            <div class="box-compra">
+                                <div> 
+                                    <span class="precio">$445.00</span> 
+                                </div>
+                                <div>
+                                    <a href="#" class="btn-compra">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="elemento"></div>
+                <div class="elemento">
+                    <article class="card">
+                        <div class="card-img" id="producto-03"></div>
+                        <div class="card-txt">
+                            <a href="#" target="_blank"><img src="https://www.elsotano.com/imagenes_grandes/9786070/978607076295.JPG" class="img-libro"/></a>
+                            <h3>La ley de Herodes</h3>
+                            <p> Jorge Ibargüengoitia</p>
+                            <div class="box-compra">
+                                <div> 
+                                    <span class="precio">$150.00</span> 
+                                </div>
+                                <div>
+                                    <a href="#" class="btn-compra">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="elemento">
+                    <article class="card">
+                        <div class="card-img" id="producto-04"></div>
+                        <div class="card-txt">
+                            <a href="#" target="_blank"><img src="https://www.elsotano.com/imagenes_grandes/9786073/978607390460.JPG" class="img-libro"/></a>
+                            <h3>Arráncame la vida</h3>
+                            <p>Ángeles Mastretta</p>
+                            <div class="box-compra">
+                                <div> 
+                                    <span class="precio">$350.00</span> 
+                                </div>
+                                <div>
+                                    <a href="#" class="btn-compra">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="elemento">
+                    <article class="card">
+                        <div class="card-img" id="producto-05"></div>
+                        <div class="card-txt">
+                            <a href="#" target="_blank"><img src="https://www.elsotano.com/imagenes_grandes/9786070/978607074392.JPG" class="img-libro"/></a>
+                            <h3>Una habitación propia</h3>
+                            <p>Virginia Woolf</p>
+                            <div class="box-compra">
+                                <div> 
+                                    <span class="precio">$240.00</span> 
+                                </div>
+                                <div>
+                                    <a href="#" class="btn-compra">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="elemento">
+                    <article class="card">
+                        <div class="card-img" id="producto-06"></div>
+                        <div class="card-txt">
+                            <a href="#" target="_blank"><img src="https://www.elsotano.com/imagenes/9786079/978607927853.JPG" class="img-libro"/></a>
+                            <h3>El doctor Zhivago</h3>
+                            <p>Borís Pasternak</p>
+                            <div class="box-compra">
+                                <div> 
+                                    <span class="precio">$385.00</span> 
+                                </div>
+                                <div>
+                                    <a href="#" class="btn-compra">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="elemento">
+                    <article class="card">
+                        <div class="card-img" id="producto-07"></div>
+                        <div class="card-txt">
+                            <a href="#" target="_blank"><img src="https://www.elsotano.com/imagenes_grandes/9786070/978607074029.JPG" class="img-libro"/></a>
+                            <h3> Ana Karenina</h3>
+                            <p>León Tolstói</p>
+                            <div class="box-compra">
+                                <div> 
+                                    <span class="precio">$350.00</span> 
+                                </div>
+                                <div>
+                                    <a href="#" class="btn-compra">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--FIN SEGUNDA SECCIÓN DE LA PÁGINA-->
+        
+        <!--TERCERA SECCIÓN DE LA PÁGINA-->
+        <!--INFORMACIÓN DEL SITIO Y LIBRERIA-->
+        <section>
+            <div class="conocenos">
+                <div class="titulo-d">
+                    <h2 class="-conocenos__titulo">Conocenos</h2>
+                    <div class="sucursal__descripcion">
+                        <p>El Túnel es una cafebrería ideal para los amantes de la literatura.</p>
+                        <p> Además de su servicio de venta de libros y productos en línea puedes visitar nuestra sucursal y acompañar tu lectura con una taza de café o bebida de tu elección, o bien, 
+                        disfrutar de los diversos eventos culturales que tenemos para ti.</p>
+                        <p>Siguenos en redes sociales y mantente atendo a la cartelera de eventos.</p>
+                        <p class="sucursal__invitación"><b>¡Te esperamos!</b></p>
+                    </div>  
+                </div>
+                <div class="sucursal">
+                    <figure class="fig__sucursal">
+                        <img src="https://i.pinimg.com/originals/6e/dc/fe/6edcfeeaf62b8c26ff0781fb4a447599.jpg" id="img-sucursal" alt="sucursal" />
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!--TERCERA SECCIÓN DE LA PÁGINA-->
+    </main>
+    <!--FIN CONTENIDO PRINCIPAL DE LA PÁGINA-->
+
+    <!--PIE DE LA PÁGINA-->
+    <footer class="main-footer">
+        <div class="footer__section">
+            <h2 class="footer__title">El Túnel</h2>
+            <p class="footer__txt">Un espacio para los amantes de la literatura. Encuentra la mejor seleccioón de libros, accesorios y un acogedor espacio en la CDMX para leer y tomar un café con tu libro favorito.</p>
+            <br>
+            <div>
+                <img src="imagenes/location-dot-solid.svg" alt="ubicación"/>
+                <span class="footer__txt">Av. Álvaro Obregón 90, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX</span>
+            </div>
+            <br>
+            <div>
+                <img src="imagenes/phone-solid.svg" alt="teléfono"/>
+                <span class="footer__txt">56 98 89 07 99 87</span>
+            </div>
+            <br>
+            <div>
+                <img src="imagenes/envelope-solid.svg" alt="email"/>
+                <a href="mailto:elcorreoquequieres@correo.com" class="email-to">eltunel.libros@gmail.com</a>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://es-la.facebook.com/" target="_blank" ><img src="imagenes/facebook-f.svg" alt="facebook" class="img_redes"/></a>
+                <a href="https://twitter.com/" target="_blank" ><img src="imagenes/x-twitter.svg" alt="twitter" class="img_redes"/></a>
+                <a href="https://www.instagram.com/" target="_blank" ><img src="imagenes/instagram.svg" alt="instagram" class="img_redes"/></a>
+                <a href="https://www.youtube.com/" target="_blank" ><img src="imagenes/youtube.svg" alt="youtube" class="img_redes"/></a>
+            </div>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Información</h2>
+            <a href="" class="footer__link">Inicio</a>
+            <a href="" class="footer__link">Acerca de El Túnel</a>
+            <a href="" class="footer__link">Tarjeta de cliente frecuente</a>
+            <a href="" class="footer__link">Ventas por mayoreo</a>
+            <a href="" class="footer__link">Facturación</a>
+            <a href="" class="footer__link">Contáctanos</a>
+            <a href="" class="footer__link">Aviso de privacidad</a>
+            <a href="" class="footer__link">Términos y condiciones</a>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Suscríbete</h2>
+          <p class="footer__txt">Regístrate para recibir noticias de promociones,eventos y actualizaciones.</p>
+          <div class="footer__subscripcion">
+            <input type="email" class="footer__input" placeholder="Ingresa tu email"/>
+            <input type="submit" class="suscripcion__enviar">
+          </div>
+        </div>
+        <p class="copy"> 2024 © <strong><b>El Túnel</b></strong>. Todos los Derechos Reservados. | Diseñado por <span><strong>Escuela de Código ADIP</strong></span></p>
+    </footer>
+    <!--FIN PIE DE LA PÁGINA-->
+
+</body>
+</html>
